@@ -51,7 +51,7 @@ module.exports = {
       address_postal: "530-0057",
       tel_display: "090-2411-0668",
       tel_raw: "+819024110668",
-      hours: "11:00 \u2013 23:00",
+      hours: "11:00 – 23:00",
       hours_note: "Open Daily",
       tablecheck_url: "https://www.tablecheck.com/shops/halal-wagyu-ohatsutennjin/reserve",
       maps_link: "https://maps.app.goo.gl/nGkUcbYJDwVXLnSJ8",
@@ -72,7 +72,7 @@ module.exports = {
       address_postal: "104-0061",
       tel_display: "03-6278-7139",
       tel_raw: "+81362787139",
-      hours: "11:00 \u2013 1:00",
+      hours: "11:00 – 1:00",
       hours_note: "Open Daily",
       tablecheck_url: "https://www.tablecheck.com/shops/halal-wagyu-ginza-5w-tokyo/reserve",
       maps_link: "https://maps.app.goo.gl/4EfmHFrLB2qsBVn88",
@@ -93,7 +93,7 @@ module.exports = {
       address_postal: "111-0032",
       tel_display: "090-5607-3945",
       tel_raw: "+819056073945",
-      hours: "11:00 \u2013 23:00",
+      hours: "11:00 – 23:00",
       hours_note: "Open Daily",
       tablecheck_url: "https://www.tablecheck.com/shops/halal-omakase-asakusa/reserve",
       maps_link: "https://maps.app.goo.gl/",
@@ -114,7 +114,7 @@ module.exports = {
       address_postal: "169-0073",
       tel_display: "090-2265-7102",
       tel_raw: "+819022657102",
-      hours: "11:00 \u2013 1:00",
+      hours: "11:00 – 1:00",
       hours_note: "Open Daily",
       tablecheck_url: "https://www.tablecheck.com/shops/halal-wagyu-shinokubo-5w-tokyo/reserve",
       maps_link: "https://maps.app.goo.gl/YZTCCng83Uo3sBWJ9",
@@ -122,6 +122,34 @@ module.exports = {
       rating: "4.9",
       rating_count: "1,273",
       rating_source: "Google Review"
+    },
+    {
+      // ===== URL/識別 =====
+      region: "kyoto",
+      slug: "nishikiichiba",
+      // ===== 店名 =====
+      name_full_en: "Halal Wagyu Kobe Beef Steak Nishiki Market Kawaramachi Food Restaurant 神户牛肉餐厅",
+      name_cn: "",
+      hero_place: "Kyoto's Nishiki Market",
+      // ===== 立地 =====（ラーメン錦市場と同じ建物 / steakは3F）
+      city: "Nishiki Market, Kyoto",
+      station_en: "Kyoto-Kawaramachi Station",
+      address_en: "3F, 501 Umeyacho, Nakagyo-ku, Kyoto",
+      address_postal: "604-8057",
+      // ===== 連絡先 =====
+      tel_display: "090-9084-4251",
+      tel_raw: "+819090844251",
+      // ===== 営業 =====
+      hours: "11:00 – 23:00",
+      hours_note: "Open Daily",
+      // ===== 予約・地図 =====（予約は電話案内・地図は非表示）
+      tablecheck_url: "",          // 空 → 予約ボタンを電話案内に
+      maps_link: "",               // 非表示
+      map_embed: "",               // 非表示
+      // ===== 評価 =====（口コミ非表示）
+      rating: "",
+      rating_count: "",
+      rating_source: ""
     }
   ]
 };
