@@ -223,12 +223,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </p>
 
       <div class="reveal d4" style="display:flex; flex-direction:column; gap:12px;">
+        {% if store.maps_link %}
         <a href="{{ store.maps_link }}" target="_blank" rel="noopener" class="btn-primary" data-ga-event="directions_click" data-ga-location="hero">
           Get Directions
         </a>
+        {% endif %}
+        {% if store.tablecheck_url %}
         <a href="{{ store.tablecheck_url }}?utm_source=lp&utm_medium=referral" target="_blank" rel="noopener" class="btn-secondary" style="color:#f5ede0; border-color:rgba(245,237,224,.35);" data-ga-event="reserve_click" data-ga-location="hero">
           Reserve a Table
         </a>
+        {% else %}
+        <a href="tel:{{ store.tel_raw }}" class="btn-primary" data-ga-event="call_click" data-ga-location="hero">
+          Call to Reserve · {{ store.tel_display }}
+        </a>
+        {% endif %}
       </div>
     </div>
     <div class="scroll-arrow">↓</div>
@@ -331,6 +339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  {% if store.rating %}
   <!-- SOCIAL PROOF -->
   <section style="background:#f2ede4; padding:72px 0;">
     <div style="max-width:360px; margin:0 auto; text-align:center; margin-bottom:32px; padding:0 24px;">
@@ -364,6 +373,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <p class="review-swipe-hint reveal" style="font-size:10px; color:rgba(24,20,12,.3); letter-spacing:.12em; text-align:right; margin-top:10px; padding:0 24px;">← swipe →</p>
   </section>
+  {% endif %}
 
   <!-- CUSTOMER PHOTOS -->
   <section style="background:#faf8f4; padding:72px 0;">
@@ -391,6 +401,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  {% if store.rating %}
   <!-- TRIPADVISOR -->
   <section style="background:#faf8f4; padding:56px 24px; border-top:1px solid rgba(201,168,76,.15);">
     <div style="max-width:900px; margin:0 auto;">
@@ -407,6 +418,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+  {% endif %}
 
   <!-- MENU -->
   <section style="background:#faf8f4; padding:72px 24px;">
@@ -509,12 +521,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div class="reveal" style="display:flex; flex-direction:column; gap:12px;">
+        {% if store.maps_link %}
         <a href="{{ store.maps_link }}" target="_blank" rel="noopener" class="btn-primary" data-ga-event="directions_click" data-ga-location="access">
           Get Directions
         </a>
+        {% endif %}
+        {% if store.tablecheck_url %}
         <a href="{{ store.tablecheck_url }}?utm_source=lp&utm_medium=referral" target="_blank" rel="noopener" class="btn-secondary" data-ga-event="reserve_click" data-ga-location="access">
           Reserve a Table
         </a>
+        {% else %}
+        <a href="tel:{{ store.tel_raw }}" class="btn-primary" data-ga-event="call_click" data-ga-location="access">
+          Call to Reserve · {{ store.tel_display }}
+        </a>
+        {% endif %}
       </div>
     </div>
   </section>
@@ -525,8 +545,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </p>
     <p style="font-size:10px; color:rgba(245,237,224,.32); letter-spacing:.28em; margin-bottom:22px;">EST. 1962 &nbsp;·&nbsp; 5TH GEN. BUTCHER</p>
     <div style="display:flex; justify-content:center; gap:28px;">
+      {% if store.tablecheck_url %}
       <a href="{{ store.tablecheck_url }}?utm_source=lp&utm_medium=referral" target="_blank" rel="noopener" style="font-size:10px; color:rgba(245,237,224,.32); text-decoration:none; letter-spacing:.14em;" data-ga-event="reserve_click" data-ga-location="footer">RESERVATION</a>
+      {% else %}
+      <a href="tel:{{ store.tel_raw }}" style="font-size:10px; color:rgba(245,237,224,.32); text-decoration:none; letter-spacing:.14em;" data-ga-event="call_click" data-ga-location="footer">CALL {{ store.tel_display }}</a>
+      {% endif %}
+      {% if store.maps_link %}
       <a href="{{ store.maps_link }}" target="_blank" rel="noopener" style="font-size:10px; color:rgba(245,237,224,.32); text-decoration:none; letter-spacing:.14em;" data-ga-event="directions_click" data-ga-location="footer">MAPS</a>
+      {% endif %}
     </div>
   </footer>
 
