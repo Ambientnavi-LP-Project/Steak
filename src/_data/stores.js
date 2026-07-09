@@ -156,7 +156,7 @@ module.exports = {
       region: "tokyo",
       slug: "ueno",
       // ===== 店名 =====
-      name_full_en: "Wagyu Steak Hamburger & Ramen Halal Vegan Gluten Free Ueno Restaurant 上野和牛拉面餐厅",
+      name_full_en: "Wagyu Hamburger Steak Halal Kobe Beef Vegan Gluten Free Food Ueno Restaurant 上野和牛餐厅",
       name_cn: "",
       hero_place: "Tokyo's Ueno",
       // ===== 立地 =====
