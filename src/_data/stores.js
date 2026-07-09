@@ -150,6 +150,34 @@ module.exports = {
       rating: "",
       rating_count: "",
       rating_source: ""
+    },
+    {
+      // ===== URL/識別 =====
+      region: "tokyo",
+      slug: "ueno",
+      // ===== 店名 =====
+      name_full_en: "Wagyu Steak Hamburger & Ramen Halal Vegan Gluten Free Ueno Restaurant 上野和牛拉面餐厅",
+      name_cn: "",
+      hero_place: "Tokyo's Ueno",
+      // ===== 立地 =====
+      city: "Ueno, Tokyo",
+      station_en: "Ueno Station",
+      address_en: "D-B UenoⅡ 5F, 6-16-7 Ueno, Taito-ku, Tokyo",
+      address_postal: "110-0005",
+      // ===== 連絡先 =====
+      tel_display: "090-5616-1151",
+      tel_raw: "+819056161151",
+      // ===== 営業 =====
+      hours: "11:00 – 23:00",
+      hours_note: "Open Daily",
+      // ===== 予約・地図 =====（予約は電話案内 / 地図は表示）
+      tablecheck_url: "",          // 空 → 予約ボタンを電話案内に
+      maps_link: "https://maps.app.goo.gl/H7T5dG7vnoravkYk6",
+      map_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.6702852278413!2d139.7761093!3d35.7107229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f668f3a44b1%3A0xb55ce50f2de7691!2zV2FneXUgU3RlYWsgSGFtYnVyZ2VyICYgUmFtZW4gSGFsYWwgVmVnYW4gR2x1dGVuIEZyZWUgVWVubyBSZXN0YXVyYW50IOS4iumHjuWSjOeJm-aLiemdoumkkOWOhQ!5e1!3m2!1sja!2sjp!4v1783587999959!5m2!1sja!2sjp",
+      // ===== 評価 =====（口コミ非表示・数値が出たら記入）
+      rating: "",
+      rating_count: "",
+      rating_source: ""
     }
   ]
 };
