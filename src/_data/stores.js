@@ -2,6 +2,9 @@
  * 店舗データ定義(steak業態)
  * 新しい店舗を追加するときは、この配列に store オブジェクトを追加するだけ。
  * Eleventy が自動で /{region}/{slug}/index.html を生成します。
+ *
+ * 地図キーは maps_embed / maps_link（ramen業態と統一）。
+ * maps_embed は <iframe> の src= の中身（URL文字列）のみを入れること。
  */
 module.exports = {
   brand: {
@@ -33,7 +36,7 @@ module.exports = {
       // ===== 予約・地図 =====
       tablecheck_url: "https://www.tablecheck.com/ja/halal-steak-ginzatsukiji-5w-tokyo/reserve/message",
       maps_link: "https://maps.app.goo.gl/7NtBgFuTmbDSjf2r8",
-      map_embed: "",
+      maps_embed: "",              // 未設定 → 埋め込み地図は非表示
       // ===== 評価 =====
       rating: "4.7",
       rating_count: "",
@@ -55,7 +58,7 @@ module.exports = {
       hours_note: "Open Daily",
       tablecheck_url: "https://www.tablecheck.com/shops/halal-wagyu-ohatsutennjin/reserve",
       maps_link: "https://maps.app.goo.gl/nGkUcbYJDwVXLnSJ8",
-      map_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d244.25082538630375!2d135.501323!3d34.7009307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e737d3d79fad%3A0x34aa836911c15bd3!2sWagyu%20Steak%20%26%20Hamburger%20(Halal%20Gluten%20Free)%20Osaka%20Station%20Restaurant!5e1!3m2!1sja!2sjp!4v1780407564711!5m2!1sja!2sjp",
+      maps_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d244.25082538630375!2d135.501323!3d34.7009307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e737d3d79fad%3A0x34aa836911c15bd3!2sWagyu%20Steak%20%26%20Hamburger%20(Halal%20Gluten%20Free)%20Osaka%20Station%20Restaurant!5e1!3m2!1sja!2sjp!4v1780407564711!5m2!1sja!2sjp",
       rating: "4.7",
       rating_count: "1,224",
       rating_source: "Google Review"
@@ -76,30 +79,9 @@ module.exports = {
       hours_note: "Open Daily",
       tablecheck_url: "https://www.tablecheck.com/shops/halal-wagyu-ginza-5w-tokyo/reserve",
       maps_link: "https://maps.app.goo.gl/4EfmHFrLB2qsBVn88",
-      map_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7956332.37488466!2d132.3809798!3d35.1867375!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a1b1f7ca7%3A0x8d81bba28006abf!2zSmFwYW5lc2UgRm9vZCBXYWd5dSBCZWVmIChIYWxhbCkgUmFtZW4gSGFtYnVyZ2VyIEdpbnphIFJlc3RhdXJhbnQgNVctVG9reW8gKOS4nOS6rOWSjOeJm-aLiem6uik!5e1!3m2!1sja!2sjp!4v1780407684524!5m2!1sja!2sjp",
+      maps_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7956332.37488466!2d132.3809798!3d35.1867375!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a1b1f7ca7%3A0x8d81bba28006abf!2zSmFwYW5lc2UgRm9vZCBXYWd5dSBCZWVmIChIYWxhbCkgUmFtZW4gSGFtYnVyZ2VyIEdpbnphIFJlc3RhdXJhbnQgNVctVG9reW8gKOS4nOS6rOWSjOeJm-aLiem6uik!5e1!3m2!1sja!2sjp!4v1780407684524!5m2!1sja!2sjp",
       rating: "4.8",
       rating_count: "4,965",
-      rating_source: "Google Review"
-    },
-    {
-      region: "tokyo",
-      slug: "asakusa",
-      name_full_en: "Asakusa Restaurant Wagyu (Halal) Steak Hamburger & Ramen (Japanese food) Godaime 1962",
-      name_cn: "",
-      hero_place: "Tokyo's Asakusa",
-      city: "Asakusa, Tokyo",
-      station_en: "Asakusa Station",
-      address_en: "Kominka 2F, 3-27-6 Asakusa, Taito-ku, Tokyo",
-      address_postal: "111-0032",
-      tel_display: "090-5607-3945",
-      tel_raw: "+819056073945",
-      hours: "11:00 – 23:00",
-      hours_note: "Open Daily",
-      tablecheck_url: "https://www.tablecheck.com/shops/halal-omakase-asakusa/reserve",
-      maps_link: "https://maps.app.goo.gl/",
-      map_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d994541.8503808195!2d136.9960645!3d35.1867127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f62d00bb699%3A0xa8daec37fe3cc7a5!2sAsakusa%20Restaurant%20Wagyu%20(Halal)%20Steak%20Hamburger%20%26%20Ramen%20(Japanese%20food)%20Godaime%201962!5e1!3m2!1sja!2sjp!4v1780407847374!5m2!1sja!2sjp",
-      rating: "4.8",
-      rating_count: "1,264",
       rating_source: "Google Review"
     },
     {
@@ -117,8 +99,8 @@ module.exports = {
       hours: "11:00 – 1:00",
       hours_note: "Open Daily",
       tablecheck_url: "https://www.tablecheck.com/shops/halal-wagyu-shinokubo-5w-tokyo/reserve",
-      maps_link: "https://maps.app.goo.gl/YZTCCng83Uo3sBWJ9",
-      map_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d965.080269282117!2d139.7020532!3d35.698213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d0a84c996ff%3A0xa473959440d7db81!2zV2FneXUgU3RlYWsgJiBIYW1idXJnZXIgUGl6emEgKEhhbGFsIFZlZ2FuIEdsdXRlbiBGcmVlKSBLYWJ1a2kgU2hpbiBPa3VibyBSZXN0YXVyYW50IOaWsOWuvyDlkozniZsg5ouJ6Z2iIOmkkOWOhQ!5e1!3m2!1sja!2sjp!4v1780408000862!5m2!1sja!2sjp",
+      maps_link: "https://maps.app.goo.gl/Cs2KYxwjL2ScCbga6",
+      maps_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d930.2740956358768!2d139.7020532!3d35.698213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d0a84c996ff%3A0xa473959440d7db81!2zV2FneXUgU3RlYWsgJiBIYW1idXJnZXIgUGl6emEgKEhhbGFsIFZlZ2FuIEdsdXRlbiBGcmVlKSBLYWJ1a2kgU2hpbiBPa3VibyBSZXN0YXVyYW50IOaWsOWuvyDlkozniZsg5ouJ6Z2iIOmkkOWOhQ!5e1!3m2!1sja!2sjp!4v1784012090545!5m2!1sja!2sjp",
       rating: "4.9",
       rating_count: "1,273",
       rating_source: "Google Review"
@@ -145,7 +127,7 @@ module.exports = {
       // ===== 予約・地図 =====（予約は電話案内・地図は非表示）
       tablecheck_url: "",          // 空 → 予約ボタンを電話案内に
       maps_link: "",               // 非表示
-      map_embed: "",               // 非表示
+      maps_embed: "",              // 非表示
       // ===== 評価 =====（口コミ非表示）
       rating: "",
       rating_count: "",
@@ -173,7 +155,7 @@ module.exports = {
       // ===== 予約・地図 =====（予約は電話案内 / 地図は表示）
       tablecheck_url: "",          // 空 → 予約ボタンを電話案内に
       maps_link: "https://maps.app.goo.gl/H7T5dG7vnoravkYk6",
-      map_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.6702852278413!2d139.7761093!3d35.7107229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f668f3a44b1%3A0xb55ce50f2de7691!2zV2FneXUgU3RlYWsgSGFtYnVyZ2VyICYgUmFtZW4gSGFsYWwgVmVnYW4gR2x1dGVuIEZyZWUgVWVubyBSZXN0YXVyYW50IOS4iumHjuWSjOeJm-aLiemdoumkkOWOhQ!5e1!3m2!1sja!2sjp!4v1783587999959!5m2!1sja!2sjp",
+      maps_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.6702852278413!2d139.7761093!3d35.7107229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f668f3a44b1%3A0xb55ce50f2de7691!2zV2FneXUgU3RlYWsgSGFtYnVyZ2VyICYgUmFtZW4gSGFsYWwgVmVnYW4gR2x1dGVuIEZyZWUgVWVubyBSZXN0YXVyYW50IOS4iumHjuWSjOeJm-aLiemdoumkkOWOhQ!5e1!3m2!1sja!2sjp!4v1783587999959!5m2!1sja!2sjp",
       // ===== 評価 =====（口コミ非表示・数値が出たら記入）
       rating: "",
       rating_count: "",
