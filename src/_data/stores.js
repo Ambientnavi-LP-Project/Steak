@@ -105,7 +105,7 @@ module.exports = {
     {
       region: "tokyo",
       slug: "shinokubo",
-      name_full_en: "Wagyu Steak & Hamburger Pizza (Halal Vegan Gluten Free) Kabuki Shin Okubo Restaurant 新宿 和牛 拉面 餐厅",
+      name_full_en: "Wagyu Steak Burger Halal Kobe Beef Vegan Gluten Free Kabuki Restaurant 和牛餐厅",
       name_cn: "",
       hero_place: "Tokyo's Shin-Okubo",
       city: "Shin-Okubo, Tokyo",
