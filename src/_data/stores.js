@@ -34,6 +34,7 @@ module.exports = {
       hours: "10:00 – 1:00",
       hours_note: "Open Daily",
       // ===== 予約・地図 =====
+      reserve_system: "tablecheck",  // "tablecheck" | "form"
       tablecheck_url: "https://www.tablecheck.com/ja/halal-steak-ginzatsukiji-5w-tokyo/reserve/message",
       maps_link: "https://maps.app.goo.gl/7NtBgFuTmbDSjf2r8",
       maps_embed: "",              // 未設定 → 埋め込み地図は非表示
@@ -56,6 +57,7 @@ module.exports = {
       tel_raw: "+819024110668",
       hours: "11:00 – 23:00",
       hours_note: "Open Daily",
+      reserve_system: "tablecheck",  // "tablecheck" | "form"
       tablecheck_url: "https://www.tablecheck.com/shops/halal-wagyu-ohatsutennjin/reserve",
       maps_link: "https://maps.app.goo.gl/nGkUcbYJDwVXLnSJ8",
       maps_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d244.25082538630375!2d135.501323!3d34.7009307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e737d3d79fad%3A0x34aa836911c15bd3!2sWagyu%20Steak%20%26%20Hamburger%20(Halal%20Gluten%20Free)%20Osaka%20Station%20Restaurant!5e1!3m2!1sja!2sjp!4v1780407564711!5m2!1sja!2sjp",
@@ -77,6 +79,7 @@ module.exports = {
       tel_raw: "+81362787139",
       hours: "11:00 – 1:00",
       hours_note: "Open Daily",
+      reserve_system: "tablecheck",  // "tablecheck" | "form"
       tablecheck_url: "https://www.tablecheck.com/shops/halal-wagyu-ginza-5w-tokyo/reserve",
       maps_link: "https://maps.app.goo.gl/4EfmHFrLB2qsBVn88",
       maps_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7956332.37488466!2d132.3809798!3d35.1867375!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a1b1f7ca7%3A0x8d81bba28006abf!2zSmFwYW5lc2UgRm9vZCBXYWd5dSBCZWVmIChIYWxhbCkgUmFtZW4gSGFtYnVyZ2VyIEdpbnphIFJlc3RhdXJhbnQgNVctVG9reW8gKOS4nOS6rOWSjOeJm-aLiem6uik!5e1!3m2!1sja!2sjp!4v1780407684524!5m2!1sja!2sjp",
@@ -98,6 +101,7 @@ module.exports = {
       tel_raw: "+819022657102",
       hours: "11:00 – 1:00",
       hours_note: "Open Daily",
+      reserve_system: "tablecheck",  // "tablecheck" | "form"
       tablecheck_url: "https://www.tablecheck.com/shops/halal-wagyu-shinokubo-5w-tokyo/reserve",
       maps_link: "https://maps.app.goo.gl/Cs2KYxwjL2ScCbga6",
       maps_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d930.2740956358768!2d139.7020532!3d35.698213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d0a84c996ff%3A0xa473959440d7db81!2zV2FneXUgU3RlYWsgJiBIYW1idXJnZXIgUGl6emEgKEhhbGFsIFZlZ2FuIEdsdXRlbiBGcmVlKSBLYWJ1a2kgU2hpbiBPa3VibyBSZXN0YXVyYW50IOaWsOWuvyDlkozniZsg5ouJ6Z2iIOmkkOWOhQ!5e1!3m2!1sja!2sjp!4v1784012090545!5m2!1sja!2sjp",
@@ -125,6 +129,7 @@ module.exports = {
       hours: "11:00 – 23:00",
       hours_note: "Open Daily",
       // ===== 予約・地図 =====（予約は電話案内・地図は非表示）
+      reserve_system: "tablecheck",  // "tablecheck" | "form"
       tablecheck_url: "",          // 空 → 予約ボタンを電話案内に
       maps_link: "",               // 非表示
       maps_embed: "",              // 非表示
@@ -153,6 +158,7 @@ module.exports = {
       hours: "11:00 – 23:00",
       hours_note: "Open Daily",
       // ===== 予約・地図 =====（予約は電話案内 / 地図は表示）
+      reserve_system: "tablecheck",  // "tablecheck" | "form"
       tablecheck_url: "",          // 空 → 予約ボタンを電話案内に
       maps_link: "https://maps.app.goo.gl/H7T5dG7vnoravkYk6",
       maps_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.6702852278413!2d139.7761093!3d35.7107229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f668f3a44b1%3A0xb55ce50f2de7691!2zV2FneXUgU3RlYWsgSGFtYnVyZ2VyICYgUmFtZW4gSGFsYWwgVmVnYW4gR2x1dGVuIEZyZWUgVWVubyBSZXN0YXVyYW50IOS4iumHjuWSjOeJm-aLiemdoumkkOWOhQ!5e1!3m2!1sja!2sjp!4v1783587999959!5m2!1sja!2sjp",
