@@ -184,7 +184,7 @@ module.exports = {
       tel_display: "090-8581-3183",
       tel_raw: "+819085813183",
       // ===== 営業 =====
-      hours: "11:00 – 23:00",
+      hours: "9:00 – 21:00",
       hours_note: "Open Daily",
       // ===== 予約・地図 =====（予約は電話案内・地図は非表示）
       reserve_system: "tablecheck",  // "tablecheck" | "form"
