@@ -166,6 +166,35 @@ module.exports = {
       rating: "",
       rating_count: "",
       rating_source: ""
+    },
+    {
+      // ===== URL/識別 =====
+      region: "kyoto",
+      slug: "kinkakuji",
+      // ===== 店名 =====
+      name_full_en: "Wagyu Steak Hamburger Halal Kobe Beef Vegan 京都美食 Kinkakuji Temple Restaurant",
+      name_cn: "",
+      hero_place: "Kyoto's Kinkakuji",
+      // ===== 立地 =====
+      city: "Kinkakuji, Kyoto",
+      station_en: "Kitano-Hakubaicho Station",
+      address_en: "13 Kinugasa Somoncho, Kita-ku, Kyoto",
+      address_postal: "603-8363",
+      // ===== 連絡先 =====
+      tel_display: "090-8581-3183",
+      tel_raw: "+819085813183",
+      // ===== 営業 =====
+      hours: "11:00 – 23:00",
+      hours_note: "Open Daily",
+      // ===== 予約・地図 =====（予約は電話案内・地図は非表示）
+      reserve_system: "tablecheck",  // "tablecheck" | "form"
+      tablecheck_url: "",          // 空 → 予約ボタンを電話案内に
+      maps_link: "",               // 非表示
+      maps_embed: "",              // 非表示
+      // ===== 評価 =====（口コミ非表示）
+      rating: "",
+      rating_count: "",
+      rating_source: ""
     }
   ]
 };
