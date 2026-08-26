@@ -222,9 +222,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="tri-overlay"></div>
       </div>
       <div class="tri-col">
+        {# 店舗別の内観画像が無い場合は /assets/kobe01.jpg にフォールバック（1枚のみ静止表示） #}
         <div class="hero-slideshow">
-          <img class="hero-slide" src="/assets/{{ store.slug }}/hero-1.jpg" alt="{{ store.name_full_en }} Wagyu Steak &amp; Burger" />
-          <img class="hero-slide" src="/assets/{{ store.slug }}/hero-2.jpg" alt="{{ store.name_full_en }} signature menu" />
+          <img class="hero-slide"
+               src="/assets/{{ store.slug }}/hero-1.jpg"
+               onerror="this.onerror=null; this.src='/assets/kobe01.jpg';"
+               alt="{{ store.name_full_en }} Wagyu Steak &amp; Burger" />
+          <img class="hero-slide"
+               src="/assets/{{ store.slug }}/hero-2.jpg"
+               onerror="this.remove();"
+               alt="{{ store.name_full_en }} signature menu" />
         </div>
         <div class="tri-overlay"></div>
       </div>
