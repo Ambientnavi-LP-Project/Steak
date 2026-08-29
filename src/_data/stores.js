@@ -195,6 +195,35 @@ module.exports = {
       rating: "",
       rating_count: "",
       rating_source: ""
+    },
+    {
+      // ===== URL/識別 =====
+      region: "tokyo",
+      slug: "asakusa",
+      // ===== 店名 =====
+      name_full_en: "Wagyu Hamburger Steak Asakusa Kobe Beef Halal Vegan Restaurant 东京美食",
+      name_cn: "",
+      hero_place: "Tokyo's Asakusa",
+      // ===== 立地 =====
+      city: "Asakusa, Tokyo",
+      station_en: "Tawaramachi Station",
+      address_en: "2F, 2-2-3 Nishiasakusa, Taito-ku, Tokyo",
+      address_postal: "111-0035",
+      // ===== 連絡先 =====
+      tel_display: "090-5668-8674",
+      tel_raw: "+819056688674",
+      // ===== 営業 =====
+      hours: "11:00 – 23:00",
+      hours_note: "Open Daily",
+      // ===== 予約・地図 =====（予約は電話案内・地図は非表示）
+      reserve_system: "tablecheck",  // "tablecheck" | "form"
+      tablecheck_url: "",          // 空 → 予約ボタンを電話案内に
+      maps_link: "",               // 非表示
+      maps_embed: "",              // 非表示
+      // ===== 評価 =====（口コミ非表示）
+      rating: "",
+      rating_count: "",
+      rating_source: ""
     }
   ]
 };
