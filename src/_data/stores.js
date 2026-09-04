@@ -189,7 +189,7 @@ module.exports = {
       // ===== 予約・地図 =====（予約は電話案内・地図は非表示）
       reserve_system: "tablecheck",  // "tablecheck" | "form"
       tablecheck_url: "",          // 空 → 予約ボタンを電話案内に
-      maps_link: "",               // 非表示
+      maps_link: "https://maps.app.goo.gl/8V2XBzRXMPqwZpud9",               // 非表示
       maps_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d816.6973276584952!2d135.72979461906752!3d35.0370003685955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600107aff1c4952f%3A0x9d293197be795beb!2sWagyu%20Steak%20Hamburger%20Halal%20Kobe%20Beef%20Vegan%20%E4%BA%AC%E9%83%BD%E7%BE%8E%E9%A3%9F%20Kinkakuji%20Temple%20Restaurant!5e0!3m2!1sja!2sjp!4v1788509735338!5m2!1sja!2sjp",
       // ===== 評価 =====（口コミ非表示）
       rating: "",
@@ -218,7 +218,7 @@ module.exports = {
       // ===== 予約・地図 =====（予約は電話案内・地図は非表示）
       reserve_system: "tablecheck",  // "tablecheck" | "form"
       tablecheck_url: "",          // 空 → 予約ボタンを電話案内に
-      maps_link: "",               // 非表示
+      maps_link: "https://maps.app.goo.gl/DNpU9hza1CjRqPwD9",               // 非表示
       maps_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4256.167822784161!2d139.7908243!3d35.7119355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f0772c81ab3%3A0x2cc225c1bfd52c74!2sWagyu%20Hamburger%20Steak%20Asakusa%20Kobe%20Beef%20Halal%20Vegan%20Restaurant%20%E4%B8%9C%E4%BA%AC%E7%BE%8E%E9%A3%9F!5e0!3m2!1sja!2sjp!4v1788508449625!5m2!1sja!2sjp",
       // ===== 評価 =====（口コミ非表示）
       rating: "",
