@@ -188,7 +188,7 @@ module.exports = {
       hours_note: "Open Daily",
       // ===== 予約・地図 =====（予約は電話案内・地図は非表示）
       reserve_system: "tablecheck",  // "tablecheck" | "form"
-      tablecheck_url: "",          // 空 → 予約ボタンを電話案内に
+      tablecheck_url: "https://www.tablecheck.com/en/halal-wagyu-kinkakuji/reserve/message",
       maps_link: "https://maps.app.goo.gl/qNV9YuLxYKefheMPA",
       maps_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1633.394744235747!2d135.72918843078668!3d35.03699592022091!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600107aff1c4952f%3A0x9d293197be795beb!2sWagyu%20Steak%20Hamburger%20Halal%20Kobe%20Beef%20Vegan%20%E4%BA%AC%E9%83%BD%E7%BE%8E%E9%A3%9F%20Kinkakuji%20Temple%20Restaurant!5e0!3m2!1sja!2sjp!4v1788768883901!5m2!1sja!2sjp",
       // ===== 評価 =====（口コミ非表示）
