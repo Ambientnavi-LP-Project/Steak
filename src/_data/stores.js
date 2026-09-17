@@ -253,6 +253,35 @@ module.exports = {
       rating: "",
       rating_count: "",
       rating_source: ""
+    },
+    {
+      // ===== URL/識別 =====（旧 omakase 祇園店（wagyu）の業態変更。住所・電話・地図は同じ）
+      region: "kyoto",
+      slug: "gion",
+      // ===== 店名 =====
+      name_full_en: "Wagyu Steak Kobe Beef 京都美食 Halal Gion Restaurant",
+      name_cn: "",
+      hero_place: "Kyoto's Gion",
+      // ===== 立地 =====
+      city: "Gion, Kyoto",
+      station_en: "Gion-Shijo Station",
+      address_en: "135 Tominaga-cho, Higashiyama-ku, Kyoto",
+      address_postal: "605-0078",
+      // ===== 連絡先 =====
+      tel_display: "070-3527-8163",
+      tel_raw: "+817035278163",
+      // ===== 営業 =====
+      hours: "11:00 – 23:00",
+      hours_note: "Open Daily",
+      // ===== 予約・地図 =====（TableCheckは omakase 祇園店と共用）
+      reserve_system: "tablecheck",  // "tablecheck" | "form"
+      tablecheck_url: "https://www.tablecheck.com/en/omakase-kyoto-shijo/reserve/message",
+      maps_link: "https://maps.app.goo.gl/TbMo3qDpCAJdZxQ28",
+      maps_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1633.39!2d135.7737978!3d35.0043878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600109a786ed6fa1%3A0xab65ce235f13f050!2sWagyu%20Steak%20Kobe%20Beef%20%E4%BA%AC%E9%83%BD%E7%BE%8E%E9%A3%9F%20Halal%20Gion%20Restaurant!5e0!3m2!1sja!2sjp!4v1789603200000!5m2!1sja!2sjp",
+      // ===== 評価 =====（口コミ非表示）
+      rating: "",
+      rating_count: "",
+      rating_source: ""
     }
   ]
 };
