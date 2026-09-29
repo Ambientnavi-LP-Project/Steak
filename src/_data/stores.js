@@ -247,8 +247,8 @@ module.exports = {
       // ===== 予約・地図 =====（TableCheck未開設 → 電話案内 / GB未開設 → 地図非表示）
       reserve_system: "tablecheck",  // "tablecheck" | "form"
       tablecheck_url: "",          // 空 → 予約ボタンを電話案内に
-      maps_link: "",               // GB開設後に設定
-      maps_embed: "",              // GB開設後に設定
+      maps_link: "https://maps.app.goo.gl/4hxJ6Dy3JKbq6ebw5",
+      maps_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817.1202245157835!2d135.77621095196218!3d34.994665196691464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001091e4b418d35%3A0x4392d2892cf5b20f!2zR29qb3pha2EgS29iZSBCZWVmIFdhZ3l1IFN0ZWFrIEhhbGFsIFJlc3RhdXJhbnQg5Lqs6YO9576O6aOf!5e0!3m2!1sja!2sjp!4v1790660776314!5m2!1sja!2sjp",
       // ===== 評価 =====（GB未開設のため口コミ非表示）
       rating: "",
       rating_count: "",
