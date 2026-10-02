@@ -213,7 +213,7 @@ module.exports = {
       tel_display: "090-5668-8674",
       tel_raw: "+819056688674",
       // ===== 営業 =====
-      hours: "11:00 – 23:00",
+      hours: "12:00 – 23:00",
       hours_note: "Open Daily",
       // ===== 予約・地図 =====（予約は電話案内・地図は非表示）
       reserve_system: "tablecheck",  // "tablecheck" | "form"
