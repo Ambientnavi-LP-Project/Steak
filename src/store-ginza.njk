@@ -66,6 +66,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .slides{position:absolute;inset:0}
   .slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,center);opacity:0;transform:scale(1.06);transition:opacity 1.4s ease,transform 7s ease-out}
   .slide.is-on{opacity:1;transform:scale(1)}
+  .slide.is-broken{display:none}
   .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,27,24,.55) 0%,rgba(30,27,24,0) 22%,rgba(30,27,24,0) 45%,rgba(30,27,24,.7) 72%,rgba(30,27,24,.95) 100%);pointer-events:none}
   .hero-top{position:relative;z-index:1;padding-top:22px}
   .hero-top img{height:clamp(64px,10vw,96px);width:auto}
@@ -173,7 +174,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .entry img{aspect-ratio:4/3}
     .btns{max-width:none}
   }
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.slide,.dock,.act{transition:none}.slide{transform:none}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.dock,.act{transition:none}.slide{transform:none;transition:opacity 1s ease}}
 </style>
 </head>
 <body>
@@ -184,7 +185,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="hero" id="hero">
     <div class="slides">
-      <img class="slide is-on" src="/assets/ginzatsukiji/hero-interior.jpg" alt="Dining room" style="--pos:center 40%" />
+      <img class="slide is-on" fetchpriority="high" src="/assets/ginzatsukiji/hero-interior.jpg" alt="Dining room" style="--pos:center 40%" />
       <img class="slide" src="/assets/ginzatsukiji/hero-burger.jpg" alt="Burger" style="--pos:center 45%" />
       <img class="slide" src="/assets/ginzatsukiji/hero-steak.jpg" alt="Steak" style="--pos:center 55%" />
       <img class="slide" src="/assets/ginzatsukiji/hero-burger-2.jpg" alt="Burger" style="--pos:center 40%" />
@@ -302,16 +303,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
 
 <script>
+/* === ヒーロー スライドショー ===
+   ・5秒ごとに自動で切り替え（ドットを押した時も、そこから5秒）
+   ・読み込みが終わっていない／読み込めなかった画像は飛ばす（壊れた画像を出さない）
+   ・タブが裏にある間は止める */
 (function(){
-  var slides=[].slice.call(document.querySelectorAll('.slide'));
-  var dots=[].slice.call(document.querySelectorAll('.dots button'));
-  var i=0,timer=null,still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function show(n){slides[i].classList.remove('is-on');dots[i].classList.remove('is-on');i=(n+slides.length)%slides.length;slides[i].classList.add('is-on');dots[i].classList.add('is-on');}
-  function start(){if(!still){clearInterval(timer);timer=setInterval(function(){show(i+1)},5200);}}
-  dots.forEach(function(d,n){d.addEventListener('click',function(){show(n);start();});});
+  var INTERVAL = 5000;
+  var slides = [].slice.call(document.querySelectorAll('.hero .slide'));
+  var dots = [].slice.call(document.querySelectorAll('.hero .dots button'));
+  var i = 0, timer = null;
+
+  function ready(img){ return img.complete && img.naturalWidth > 0 && !img.classList.contains('is-broken'); }
+
+  slides.forEach(function(img, n){
+    img.addEventListener('error', function(){
+      img.classList.add('is-broken');
+      if (dots[n]) dots[n].style.display = 'none';
+      if (n === i) go(i + 1);
+    });
+  });
+
+  function show(n){
+    if (n === i) return;
+    slides[i].classList.remove('is-on'); if (dots[i]) dots[i].classList.remove('is-on');
+    i = n;
+    slides[i].classList.add('is-on'); if (dots[i]) dots[i].classList.add('is-on');
+  }
+  function go(n){
+    for (var k = 0; k < slides.length; k++){
+      var idx = (n + k) % slides.length;
+      if (ready(slides[idx])) { show(idx); return; }
+    }
+  }
+  function start(){ clearInterval(timer); timer = setInterval(function(){ go(i + 1); }, INTERVAL); }
+  function stop(){ clearInterval(timer); timer = null; }
+
+  dots.forEach(function(d, n){
+    d.addEventListener('click', function(){ if (ready(slides[n])) { show(n); start(); } });
+  });
+  document.addEventListener('visibilitychange', function(){ document.hidden ? stop() : start(); });
   start();
-  var dock=document.getElementById('dock'),hero=document.getElementById('hero');
-  if('IntersectionObserver' in window){new IntersectionObserver(function(es){dock.classList.toggle('is-on',!es[0].isIntersecting);},{threshold:0.05}).observe(hero);}
+
+  var dock = document.getElementById('dock'), hero = document.getElementById('hero');
+  if (dock && hero && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ dock.classList.toggle('is-on', !es[0].isIntersecting); }, {threshold:0.05}).observe(hero);
+  }
 })();
 </script>
 <script>
