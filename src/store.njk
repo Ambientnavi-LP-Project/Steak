@@ -1,6 +1,6 @@
 ---
 pagination:
-  data: stores.stores
+  data: stores.stores_default   # 専用デザインの店舗（layout_variant あり）は除外
   size: 1
   alias: store
 permalink: "/{{ store.region }}/{{ store.slug }}/index.html"
@@ -32,6 +32,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="{{ store.name_full_en }} — Japanese Wagyu. Muslim-Friendly. 5th-generation butcher since 1962." />
   <title>{{ store.name_full_en }}</title>
+  <link rel="icon" href="/assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
