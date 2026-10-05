@@ -6,7 +6,7 @@
  * 地図キーは maps_embed / maps_link（ramen業態と統一）。
  * maps_embed は <iframe> の src= の中身（URL文字列）のみを入れること。
  */
-module.exports = {
+const data = {
   brand: {
     domain: "steak.halal-food-wagyu.com",
     ga4_id: "G-HQ62CMRJKR",
@@ -18,6 +18,7 @@ module.exports = {
       // ===== URL/識別 =====
       region: "tokyo",
       slug: "ginzatsukiji",
+      layout_variant: "ginza",   // 専用デザイン（store-ginza.njk）で生成。無い店舗は共通の store.njk
       // ===== 店名 =====
       name_full_en: "Japanese Food Wagyu Restaurant (Halal) Steak & Burger · 5W-Tokyo-Ginza",
       name_cn: "5W-東京-銀座",
@@ -256,3 +257,13 @@ module.exports = {
     }
   ]
 };
+
+/**
+ * テンプレートの振り分け
+ *  - stores_default : layout_variant 無し → store.njk（共通デザイン）
+ *  - stores_ginza   : layout_variant "ginza" → store-ginza.njk（銀座築地専用デザイン）
+ */
+data.stores_default = data.stores.filter(s => !s.layout_variant);
+data.stores_ginza = data.stores.filter(s => s.layout_variant === "ginza");
+
+module.exports = data;
