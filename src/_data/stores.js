@@ -214,7 +214,7 @@ const data = {
       tel_display: "080-8378-1058",
       tel_raw: "+818083781058",
       // ===== 営業 =====
-      hours: "11:00 – 23:00",
+      hours: "10:00 – 23:00",
       hours_note: "Open Daily",
       // ===== 予約・地図 =====（TableCheck未開設 → 電話案内 / GB未開設 → 地図非表示）
       reserve_system: "tablecheck",  // "tablecheck" | "form"
