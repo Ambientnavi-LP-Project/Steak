@@ -127,7 +127,7 @@ const data = {
       tel_display: "090-9084-4251",
       tel_raw: "+819090844251",
       // ===== 営業 =====
-      hours: "8:00 – 23:00",
+      hours: "10:00 – 23:00",
       hours_note: "Open Daily",
       // ===== 予約・地図 =====（予約は電話案内・地図は非表示）
       reserve_system: "tablecheck",  // "tablecheck" | "form"
