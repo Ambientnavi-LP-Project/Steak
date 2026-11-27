@@ -33,7 +33,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="description" content="{{ store.name_full_en }} — Japanese Wagyu. Muslim-Friendly. 5th-generation butcher since 1962." />
+<meta name="description" content="{{ store.name_full_en }} — Japanese Wagyu. Muslim-Friendly." />
 <title>{{ store.name_full_en }}</title>
 <link rel="icon" href="/assets/favicon.ico" sizes="any" />
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
@@ -315,7 +315,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrap">
       <div class="story-head">
         <img src="/assets/brand/icon-cow.png" alt="" />
-        <h2>The 5th generation Wagyu butcher<small>Est. 1962</small></h2>
+        <h2>The 5th generation Wagyu butcher<template data-hidden="1962"><small>Est. 1962</small></template></h2>
       </div>
       <p class="lead">As Wagyu craftsmen, we raise our cattle in Miyazaki using our own original blended feed, carefully developed to create truly delicious red meat.</p>
       <p class="lead">One of the defining characteristics of Miyazaki Wagyu is the natural sweetness and rich aroma of the meat itself.</p>
@@ -350,7 +350,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <footer>
     <img src="/assets/brand/logo-wagyu-badge.png" alt="和牛" />
-    <p>{{ store.name_cn or store.city }} ・ Est. 1962</p>
+    <p>{{ store.name_cn or store.city }}<template data-hidden="1962"> ・ Est. 1962</template></p>
   </footer>
 
 <script>
