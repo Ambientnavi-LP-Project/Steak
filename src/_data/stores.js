@@ -29,8 +29,8 @@ const data = {
       address_en: "The Forme Ginza B1, 8-18-4 Ginza, Chuo-ku, Tokyo",
       address_postal: "104-0061",
       // ===== 連絡先 =====
-      tel_display: "",
-      tel_raw: "",
+      tel_display: "03-6826-9680",
+      tel_raw: "+81368269680",
       // ===== 営業 =====
       hours: "10:00 – 1:00",
       hours_note: "Open Daily",
@@ -59,7 +59,7 @@ const data = {
       hours: "11:00 – 23:00",
       hours_note: "Open Daily",
       reserve_system: "tablecheck",  // "tablecheck" | "form"
-      tablecheck_url: "https://www.tablecheck.com/en/halal-wagyu-ohatsutennjin/reserve/message",
+      tablecheck_url: "",
       maps_link: "https://maps.app.goo.gl/nGkUcbYJDwVXLnSJ8",
       maps_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d244.25082538630375!2d135.501323!3d34.7009307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e737d3d79fad%3A0x34aa836911c15bd3!2sWagyu%20Steak%20%26%20Hamburger%20(Halal%20Gluten%20Free)%20Osaka%20Station%20Restaurant!5e0!3m2!1sja!2sjp!4v1780407564711!5m2!1sja!2sjp",
       rating: "4.7",
@@ -81,7 +81,7 @@ const data = {
       hours: "8:00 – 1:00",
       hours_note: "Open Daily",
       reserve_system: "tablecheck",  // "tablecheck" | "form"
-      tablecheck_url: "https://www.tablecheck.com/en/halal-wagyu-ginza-5w-tokyo/reserve/message",
+      tablecheck_url: "",
       maps_link: "https://maps.app.goo.gl/5kbrAvzrYVzqDRR88",
       maps_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1620.6251859301601!2d139.76779941143224!3d35.67083662872174!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a1b1f7ca7%3A0x8d81bba28006abf!2zSmFwYW5lc2UgRm9vZCBXYWd5dSBCZWVmIChIYWxhbCkgUmFtZW4gSGFtYnVyZ2VyIEdpbnphIFJlc3RhdXJhbnQgNVctVG9reW8gKOS4nOS6rOWSjOeJm-aLiem6uik!5e0!3m2!1sja!2sjp!4v1788768792606!5m2!1sja!2sjp",
       rating: "4.8",
@@ -103,7 +103,7 @@ const data = {
       hours: "11:00 – 1:00",
       hours_note: "Open Daily",
       reserve_system: "tablecheck",  // "tablecheck" | "form"
-      tablecheck_url: "https://www.tablecheck.com/en/halal-wagyu-shinokubo-5w-tokyo/reserve/message",
+      tablecheck_url: "",
       maps_link: "https://maps.app.goo.gl/Cs2KYxwjL2ScCbga6",
       maps_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d930.2740956358768!2d139.7020532!3d35.698213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d0a84c996ff%3A0xa473959440d7db81!2zV2FneXUgU3RlYWsgJiBIYW1idXJnZXIgUGl6emEgKEhhbGFsIFZlZ2FuIEdsdXRlbiBGcmVlKSBLYWJ1a2kgU2hpbiBPa3VibyBSZXN0YXVyYW50IOaWsOWuvyDlkozniZsg5ouJ6Z2iIOmkkOWOhQ!5e0!3m2!1sja!2sjp!4v1784012090545!5m2!1sja!2sjp",
       rating: "4.9",
@@ -160,7 +160,7 @@ const data = {
       hours_note: "Open Daily",
       // ===== 予約・地図 =====（予約は電話案内・地図は非表示）
       reserve_system: "tablecheck",  // "tablecheck" | "form"
-      tablecheck_url: "https://www.tablecheck.com/en/halal-wagyu-kinkakuji/reserve/message",
+      tablecheck_url: "",
       maps_link: "https://maps.app.goo.gl/qNV9YuLxYKefheMPA",
       maps_embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1633.394744235747!2d135.72918843078668!3d35.03699592022091!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600107aff1c4952f%3A0x9d293197be795beb!2sWagyu%20Steak%20Hamburger%20Halal%20Kobe%20Beef%20Vegan%20%E4%BA%AC%E9%83%BD%E7%BE%8E%E9%A3%9F%20Kinkakuji%20Temple%20Restaurant!5e0!3m2!1sja!2sjp!4v1788768883901!5m2!1sja!2sjp",
       // ===== 評価 =====（口コミ非表示）
@@ -247,7 +247,7 @@ const data = {
       hours_note: "Open Daily",
       // ===== 予約・地図 =====（TableCheckは omakase 祇園店と共用）
       reserve_system: "tablecheck",  // "tablecheck" | "form"
-      tablecheck_url: "https://www.tablecheck.com/en/omakase-kyoto-shijo/reserve/message",
+      tablecheck_url: "",
       maps_link: "https://maps.app.goo.gl/TbMo3qDpCAJdZxQ28",
       maps_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1633.39!2d135.7737978!3d35.0043878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600109a786ed6fa1%3A0xab65ce235f13f050!2sWagyu%20Steak%20Kobe%20Beef%20%E4%BA%AC%E9%83%BD%E7%BE%8E%E9%A3%9F%20Halal%20Gion%20Restaurant!5e0!3m2!1sja!2sjp!4v1789603200000!5m2!1sja!2sjp",
       // ===== 評価 =====（口コミ非表示）
