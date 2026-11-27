@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="{{ store.name_full_en }} — Japanese Wagyu. Muslim-Friendly. 5th-generation butcher since 1962." />
+  <meta name="description" content="{{ store.name_full_en }} — Japanese Wagyu. Muslim-Friendly." />
   <title>{{ store.name_full_en }}</title>
   <link rel="icon" href="/assets/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
@@ -312,7 +312,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="marquee-dot"></span>
       <span class="marquee-item">Muslim-Friendly · ムスリムフレンドリー</span>
       <span class="marquee-dot"></span>
+      <template data-hidden="1962">
       <span class="marquee-item">5th Gen. Butcher Since 1962</span>
+      </template>
       <span class="marquee-dot"></span>
       <span class="marquee-item">Walk-ins Welcome · ウォークイン歓迎</span>
       <span class="marquee-dot"></span>
@@ -322,7 +324,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="marquee-dot"></span>
       <span class="marquee-item">Muslim-Friendly · ムスリムフレンドリー</span>
       <span class="marquee-dot"></span>
+      <template data-hidden="1962">
       <span class="marquee-item">5th Gen. Butcher Since 1962</span>
+      </template>
       <span class="marquee-dot"></span>
       <span class="marquee-item">Walk-ins Welcome · ウォークイン歓迎</span>
       <span class="marquee-dot"></span>
@@ -431,6 +435,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   {% if store.rating %}
+  <template data-hidden="tripadvisor">
   <!-- TRIPADVISOR -->
   <section style="background:#faf8f4; padding:56px 24px; border-top:1px solid rgba(201,168,76,.15);">
     <div style="max-width:900px; margin:0 auto;">
@@ -447,6 +452,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+  </template>
   {% endif %}
 
   <!-- MENU -->
@@ -586,7 +592,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p style="font-family:'Cormorant Garamond', serif; font-size:clamp(.95rem,3.2vw,1.15rem); font-weight:600; color:#f5ede0; letter-spacing:.05em; line-height:1.55; max-width:560px; margin:0 auto 18px; overflow-wrap:anywhere;">
       {{ shopName }}
     </p>
+    <template data-hidden="1962">
     <p style="font-size:10px; color:rgba(245,237,224,.32); letter-spacing:.28em; margin-bottom:22px;">EST. 1962 &nbsp;·&nbsp; 5TH GEN. BUTCHER</p>
+    </template>
     <div style="display:flex; justify-content:center; gap:28px;">
       {% if store.tablecheck_url %}
       <a href="{{ store.tablecheck_url }}" target="_blank" rel="noopener" style="font-size:10px; color:rgba(245,237,224,.32); text-decoration:none; letter-spacing:.14em;" data-ga-event="reserve_click">RESERVATION</a>
